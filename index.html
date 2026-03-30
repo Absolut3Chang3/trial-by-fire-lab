@@ -203,12 +203,9 @@ footer p{font-size:.78rem;color:#555}
     <div class="eyebrow">Built in the field. Tested on real work.</div>
     <h1>AI That Works<em>On the Clock</em></h1>
     <p style="color:var(--chalk-dim);line-height:1.8;max-width:38ch;margin-bottom:1.5rem;font-size:.95rem"><strong style="color:var(--chalk);font-weight:500">No fluff. No dev jargon.</strong> Battle-tested AI tools and automation playbooks built by a tradesman who got tired of waiting for Silicon Valley to care about the trades.</p>
-    <div class="form-wrap">
-      <form onsubmit="handleSubmit(event)">
-        <input type="email" placeholder="your@email.com" required />
-        <button type="submit">Join the Lab</button>
-      </form>
-      <p class="form-note">Free. No spam. Unsubscribe anytime.</p>
+    <div style="margin-top:2rem">
+      <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+      <iframe src="https://subscribe-forms.beehiiv.com/4ea7b745-084a-45c4-9428-af9377e8b7f6" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:480px;height:245px;margin:0;border-radius:0px;background-color:transparent;box-shadow:0 0 #0000;"></iframe>
     </div>
   </div>
   <div class="hero-right">
@@ -289,12 +286,8 @@ footer p{font-size:.78rem;color:#555}
     <div class="section-tag">Join the Lab</div>
     <h2>Get In<br>the Fire</h2>
     <p>Free newsletter for blue-collar operators building with AI. Drop your email and get to work.</p>
-    <div class="form-wrap">
-      <form onsubmit="handleSubmit(event)">
-        <input type="email" placeholder="your@email.com" required />
-        <button type="submit">Subscribe Free</button>
-      </form>
-      <p class="form-note">Free. No spam. Unsubscribe anytime.</p>
+    <div style="margin-top:1rem">
+      <iframe src="https://subscribe-forms.beehiiv.com/4ea7b745-084a-45c4-9428-af9377e8b7f6" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:480px;height:245px;margin:0;border-radius:0px;background-color:transparent;box-shadow:0 0 #0000;"></iframe>
     </div>
   </div>
   <div class="sub-right">
@@ -340,20 +333,6 @@ footer p{font-size:.78rem;color:#555}
   </div>
 </footer>
 
-<script>
-function handleSubmit(e){
-  e.preventDefault();
-  const btn=e.target.querySelector('button');
-  const orig=btn.textContent;
-  btn.textContent='Opening...';
-  btn.style.background='#e67e22';
-  setTimeout(()=>{
-    window.open('https://newsletter.trialbyfirelab.com','_blank');
-    btn.textContent='Done!';
-    e.target.querySelector('input').value='';
-    setTimeout(()=>{btn.textContent=orig;btn.style.background=''},3000);
-  },500);
-}
-</script>
+<script></script>
 </body>
 </html>
